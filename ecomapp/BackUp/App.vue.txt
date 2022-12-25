@@ -1,0 +1,116 @@
+<template>
+  <!-- Main Container -->
+  <div>
+
+    <!--Navbar -->
+   <NavBar/>
+    
+   <router-view />
+  
+
+<!-- Body Content -->
+<div class="page-wrap">
+    <div class="container mt-1">
+      <div class="grid">
+        <div class="row">
+          <div class="col">
+            <div>
+            <router-link class="nav-link" to="/about">About</router-link>
+        </div>
+            <h2> App Fiji</h2>
+            <p class="fw-bold"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sint, praesentium
+              debitis earum libero facere! Ducimus quod labore obcaecati in sequi deleniti ullam sit possimus nulla
+              nobis mollitia, dolor incidunt. Hello, Fiji Islands </p>
+            <button class="btn btn-primary btn-sm m-3 ps-4 pe-4">Test</button>
+            <i class="fa-solid fa-building-user "></i>
+
+            <hr />
+
+            <Customer name="Ron" v-bind:age=39 designation="Tutor" />
+
+            <Employee />
+
+            <Counter />
+            <hr />
+            <Greeting />
+            <hr />
+            <Register />
+            <hr />
+            <AuthUser />
+            <hr />           
+            <Userlist />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Footer -->
+
+  <footer class="fixed-bottom  ">
+  <div class="container">
+    <span>© Ronald P Softwares Pty Ltd 2018 – 2022. All Rights Reserved.</span>
+  </div>
+</footer>
+
+
+  </div>  <!--End of container-->
+</template>
+
+
+<script>
+
+import Customer from "@/components/CustomerLs.vue";
+import Employee from "@/components/Employee.vue"
+import Counter from "@/components/Counter.vue"
+import Greeting from "@/components/Greetings.vue"
+import Register from "@/components/Register.vue"
+import AuthUser from "@/components/AuthenticateUser.vue"
+import Userlist from "@/components/UserList.vue"
+import NavBar from "@/components/Navbaar.vue"
+
+export default {
+
+  components: {
+    Customer,
+    Employee,
+    Counter,
+    Greeting,
+    Register,
+    AuthUser,
+    Userlist,  
+    NavBar,
+
+  },
+};
+</script>
+
+<style>
+@import "./assets/style/style.css";
+</style>
+
+<!--
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+</style>
+-->

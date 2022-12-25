@@ -1,0 +1,74 @@
+
+body{
+   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;     
+    background-color: rgb(217, 247, 247) !important;
+    /* Style to add navbar to be fixed on top */
+    /* min-height: 50rem; */
+    padding-top: 3.8rem;
+}
+
+.page-wrap {
+    min-height: 90.5%;
+    /* equal to footer height */
+    margin-bottom: -20px;
+    padding-bottom:20px;
+}
+    .page-wrap:after {
+        content: "";
+        display: block;
+    }
+    .site-footer, .page-wrap:after {
+        height: 20px;
+    }
+
+    footer{
+        background-color:rgb(139, 3, 3);
+        color: white;
+        min-height: 40px;       
+        vertical-align: auto;      
+    }
+
+    footer .container {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.7rem;
+      }
+
+      @media screen and (max-width: 641px) {
+        footer {
+            background: #b02669;        
+            min-height: 50px;           
+        }
+        .page-wrap {
+            width: auto;          
+            min-height: 86vh;      
+            margin: 1px auto 10px auto;
+        }
+        .nav-link-authenticate{
+            margin-top: 10px; 
+        }
+    }
+    
+    nav {
+        background-color: #830404;
+    }
+    
+/* .page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+} */
+
+.icon-color{
+    color: white;
+    font-size: 10 !important;
+}
